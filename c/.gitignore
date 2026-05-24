@@ -1,0 +1,21 @@
+# Mac Finder
+.DS_STORE
+
+# Build output
+bin/
+obj/
+
+# Dependency files
+*.d
+
+# Compiled files
+*.o
+*.a
+*.so
+*.exe
+
+compile_commands.json
+
+# direnv
+.direnv/
+.envrc
