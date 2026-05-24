@@ -15,7 +15,7 @@ CFLAGS  := -std=c++23 -Wall -Wextra -I. -MMD -MP
 # -l links math
 LDFLAGS := -lm
 
-# search recursively in SRC_DIR for .c files
+# search recursively in SRC_DIR for .cpp files
 SRC_S := $(shell find $(SRC_DIR) -name "*.cpp")
 # for SRC_S replace every file with the same layout but in OBJ_DIR and .o extension
 OBJ_S := $(SRC_S:$(SRC_DIR)/%.cpp=$(OBJ_DIR)/%.o)

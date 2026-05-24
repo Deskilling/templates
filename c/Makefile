@@ -32,7 +32,7 @@ $(BUILD_DIR):
 	mkdir -p $@
 
 $(TARGET): $(OBJ_S) | $(BUILD_DIR)
-	$(CC) -o $@ $(OBJS) $(LDFLAGS)
+	$(CC) -o $@ $(OBJ_S) $(LDFLAGS)
 
 $(OBJ_DIR)/%.o: $(SRC_DIR)/%.c
 	@mkdir -p $(dir $@)
